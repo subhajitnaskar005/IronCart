@@ -22,8 +22,8 @@ IronCart/
 ## How to Run
 
 ### Prerequisites
-- Java 17 or higher
-- Node.js 18 or higher
+- Java
+- Node.js
 - MySQL
 
 ### 1. Clone the repository
