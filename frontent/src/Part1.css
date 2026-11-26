@@ -1,0 +1,154 @@
+.yellow-btn {
+  --btn-bg: rgb(198, 244, 50);
+  --btn-bg-hover: #ffe04d;
+  --btn-bg-active: #e6bd00;
+
+  padding: 12px 28px;
+  min-height: 44px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  color: #1a1a1a;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+
+.yellow-btn:hover {
+  background-color: var(--btn-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.yellow-btn a {
+  all: unset;
+}
+
+.yellow-btn:active {
+  background-color: var(--btn-bg-active);
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.08s;
+}
+
+.yellow-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.yellow-btn:disabled {
+  background-color: #6b6b6b;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yellow-btn {
+    transition: background-color 0.25s ease;
+  }
+
+  .yellow-btn:hover,
+  .yellow-btn:active {
+    transform: none;
+  }
+}
+
+.black-btn {
+  --btn-bg: #000;
+  --btn-bg-hover: #69696;
+  /* --btn-bg-active: #e6bd00; */
+
+  padding: 12px 28px;
+  min-height: 44px;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  color: #fff;
+  font-size: 1rem;
+  border: 1px solid white;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
+
+  /* the smooth, natural colour change */
+  transition:
+    background-color 0.25s ease,
+    transform 0.15s ease,
+    box-shadow 0.25s ease;
+}
+
+.black-btn:hover {
+  background-color: var(--btn-bg-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+
+.black-btn a {
+  all: unset;
+}
+
+.black-btn:active {
+  background-color: var(--btn-bg-active);
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition-duration: 0.08s;
+}
+
+.black-btn:focus-visible {
+  outline: 3px solid #fff;
+  outline-offset: 3px;
+}
+
+.black-btn:disabled {
+  background-color: #6b6b6b;
+  color: #bdbdbd;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .black-btn {
+    transition: background-color 0.25s ease;
+  }
+
+  .black-btn:hover,
+  .black-btn:active {
+    transform: none;
+  }
+}
+
+.part1-section2 {
+  position: relative;       
+  overflow: hidden;         
+  flex: 1 1 320px;
+  min-height: 340px;
+  border-radius: 20px;
+  background: rgb(31, 36, 16);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.part1-section2 video {
+  position: absolute;
+  inset: 0;                  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       
+}
+
+.part1-section2 div {
+  width: 180px;
+  height: 240px;
+  border-radius: 30px 30px 10px 10px;
+  background: rgba(198, 244, 50, 0.18);
+}
