@@ -1,0 +1,41 @@
+.iteams:hover , .clothes:hover{
+    opacity: .85;
+    cursor: pointer;
+}
+
+.clothes span , .accesories span{
+    bottom: 30px;
+    left: 20px;
+    position: absolute;
+}
+
+.clothes , .accesories{
+    border: 1px solid #D3D3D333;
+}
+
+.clothes p, .accesories p{
+    bottom: 10px;
+    left: 20px;
+    position: absolute;
+}
+
+.iteams {
+  position: relative;       
+  overflow: hidden;         
+  flex: 1 1 320px;
+  min-height: 340px;
+  border-radius: 20px;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iteams video {
+  position: absolute;
+  inset: 0;                  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  opacity: .80;     
+}

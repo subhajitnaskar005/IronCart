@@ -1,0 +1,50 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.7);  
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  font-family: Barlow, sans-serif;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.navbar__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 5vw;
+  gap: 16px;
+}
+
+.navbar__accent { color: yellow; }
+
+.navbar__actions { display: flex; gap: 10px; }
+
+.navbar__actions a{
+  color: white;
+}
+
+.navbar__actions a:active{
+  opacity: .85;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 28px;
+  font-weight: 600;
+}
+
+.navigate {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.navigate:hover,
+.navigate.active {
+  color: yellow;
+}

@@ -1,0 +1,22 @@
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    color: yellow;
+    gap: 5px;
+    margin-bottom: 50px;
+}
+
+.footer h5{
+    margin-bottom: 10px;
+}
+
+.footer a{
+  text-decoration: none;
+  color: #fff;
+  opacity: .85;
+}
+
+.footer a:hover{
+    opacity: 1;
+    font-weight: 500; 
+}
